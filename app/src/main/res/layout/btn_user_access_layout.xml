@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D7EDFB"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER ACCESS"
+        android:textSize="40dp"
+        android:textColor="#007CC3"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btn_insert_ua"
+        android:text="insert"
+        android:textColor="#007CC3"
+        android:textSize="35dp"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btn_update_ua"
+        android:text="update"
+        android:textColor="#007CC3"
+        android:textSize="35dp"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btn_delete_ua"
+        android:text="delete"
+        android:textColor="#007CC3"
+        android:textSize="35dp"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btn_select_all_ua"
+        android:text="select all"
+        android:textColor="#007CC3"
+        android:textSize="35dp"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

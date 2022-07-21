@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#D7EDFB">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Form"
+        android:id="@+id/emp_form"
+        android:textSize="30dp"
+        android:textColor="#007CC3"
+        android:textStyle="bold"
+        android:layout_marginLeft="55dp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Employee Id"
+        android:id="@+id/edit_txt_employee_id"
+        android:background="@drawable/shape_textbox"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/emp_form"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Full Name"
+        android:id="@+id/edit_txt_full_name"
+        android:background="@drawable/shape_textbox"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/edit_txt_employee_id"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Address"
+        android:id="@+id/edit_txt_address"
+        android:background="@drawable/shape_textbox"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/edit_txt_full_name"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:hint="Phone"
+        android:id="@+id/edit_txt_phone"
+        android:inputType="phone"
+        android:background="@drawable/shape_textbox"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/edit_txt_address"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:hint="Email"
+        android:id="@+id/edit_txt_email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/shape_textbox"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/edit_txt_address"
+        android:layout_toRightOf="@id/edit_txt_phone"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:hint="Marital Status"
+        android:id="@+id/edit_txt_marital"
+        android:background="@drawable/shape_textbox"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/edit_txt_phone"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:hint="Department ID"
+        android:id="@+id/edit_txt_dept"
+        android:inputType="number"
+        android:background="@drawable/shape_textbox"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/edit_txt_phone"
+        android:layout_toRightOf="@id/edit_txt_marital"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:hint="Date of Birth"
+        android:id="@+id/edit_txt_dof"
+        android:inputType="date"
+        android:background="@drawable/shape_textbox"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/edit_txt_marital"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:hint="Hire Date"
+        android:id="@+id/edit_txt_hdate"
+        android:inputType="date"
+        android:background="@drawable/shape_textbox"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/edit_txt_marital"
+        android:layout_toRightOf="@id/edit_txt_dof"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="#007CC3"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/txt_gender"
+        android:layout_below="@id/edit_txt_dof"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:id="@+id/radio_group_gender"
+        android:layout_below="@id/edit_txt_dof"
+        android:layout_toRightOf="@id/txt_gender">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/radio_btn_female"
+            android:textColor="#007CC3"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:checked="true"
+            android:layout_marginRight="30dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/radio_btn_male"
+            android:textColor="#007CC3"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/image_view_id"
+        android:background="@drawable/shape_textbox"
+        android:layout_below="@id/radio_group_gender"
+        android:src="@drawable/ic_person_add_black_24dp"
+        android:layout_marginLeft="65dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/create_emp_btn"
+        android:layout_below="@id/image_view_id"
+        android:background="@drawable/shape_btn"
+        android:text="Create Employee"
+        android:textColor="#007CC3"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
+</ScrollView>

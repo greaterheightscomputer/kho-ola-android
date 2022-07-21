@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/update_dept_id"
+        android:hint="Enter Department ID"
+        android:textSize="22sp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/shape_textbox"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/go_dept_btn"
+        android:text="GO"
+        android:textSize="30dp"
+        android:textColor="#D9D9DC"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

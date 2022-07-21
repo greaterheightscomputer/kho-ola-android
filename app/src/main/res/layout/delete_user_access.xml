@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D7EDFB"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete User Access"
+        android:textSize="30dp"
+        android:textColor="#007CC3"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/edit_text_user_id"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/shape_textbox"
+        android:hint="user id"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/edit_text_email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/shape_textbox"
+        android:hint="email"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/edit_text_password"
+        android:background="@drawable/shape_textbox"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priviledge"
+        android:textSize="20sp"
+        android:textColor="#007CC3"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbok_user"
+        android:text="User"
+        android:textColor="#007CC3"
+        android:textSize="18sp"
+        android:textStyle="bold"  />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbok_admin"
+        android:text="Admin"
+        android:textColor="#007CC3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/delete_user_access_btn"
+        android:text="Delete User Acess"
+        android:textColor="#007CC3"
+        android:textSize="20dp"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
